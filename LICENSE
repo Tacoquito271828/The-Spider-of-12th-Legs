@@ -4,15 +4,15 @@
 #     .       *.  =.    :  :    .+.  +      =:
 #     =.     .+   *     *-.#.    +   =-     :+
 #    .*.     .+:  :=   :#. +=   ==  :+.     -=
-#     :*.      +:  .--:+###%*-==:  :=      --
+#     :*.      +:  .--:*%##%*-==:  :=      --
 #      :+       ==----%%%%%%%%+--==-     .-*
 # :.    :=---:.::----=#%%%%%%%+-====-:=+=-:     .-.
 #--          :=-.   .+%%%%%%%%#=.  .::.          -+
 #==            .-=-+%%%%%%%%%%%%%*==-.          :*.
 # ==        :==-. .#%%%%%%#%%%%%%#. .-+=:::--:::*-
-#  +=----==+-.  :=+%%%%%%%%%%%%%%%*=:  .-:.  ..:-.
-#           :===: .%%%%%%%%%%%%%%# .:===-
-#          =+.   :=:+%%%%%%%%%%#-:+:   .++.
+#  +=----==+-.  :=+%%%%%%%#%%%%%%%*=:  .-:.  ..:-.
+#           :===: .%%%%%%###%%%%%# .:===-
+#          =+.   :=:+%%%%%#%%%%#-:+:   .++.
 #        :+:   -+-   .=#%%%%%*-    -*:   :+=.
 #     .-+-     ++       .-=-.      .#=     :++.
 #     -*.      =+                   #=      -*
@@ -35,11 +35,11 @@ import havocui
 import os
 
 #spiderfoot_path = os.system("locate /sf.py")
-spiderfoot_path = "/opt/Havoc/data/extensions/Test-SF/spiderfoot-4.0/sf.py"
+spiderfoot_path = "/opt/Havoc/data/extensions/The_Spider/spiderfoot/sf.py"
 
 BAKER_ENCRYPT_TECHNIQUES = ["sfp_accounts", "sfp_spider", "sfp_names", "sfp_email"]
-#MODULES_AVAILABLE = []
-#all_all_modules =
+MODULES_AVAILABLE = ["sfp_abstractapi", "sfp_abusech", "sfp_abuseipdb", "sfp_abusix", "sfp_accounts", "sfp_adblock", "sfp_adguard_dns", "sfp_ahmia", "sfp_alienvault", "sfp_alienvaultiprep", "sfp_apple_itunes", "sfp_archiveorg", "sfp_arin", "sfp_azureblobstorage", "sfp_base64", "sfp_bgpview", "sfp_binaryedge", "sfp_bingsearch", "sfp_bingsharedip", "sfp_binstring", "sfp_bitcoin", "sfp_bitcoinabuse", "sfp_bitcoinwhoswho", "sfp_blockchain", "sfp_blocklistde", "sfp_botscout", "sfp_botvrij", "sfp_builtwith", "sfp_c99", "sfp_callername", "sfp_censys", "sfp_certspotter", "sfp_cinsscore", "sfp_circllu", "sfp_citadel", "sfp_cleanbrowsing", "sfp_cleantalk", "sfp_clearbit", "sfp_cloudflaredns", "sfp_coinblocker", "sfp_commoncrawl", "sfp_comodo", "sfp_company", "sfp_cookie", "sfp_countryname", "sfp_creditcard", "sfp_crobat_api", "sfp_crossref", "sfp_crt", "sfp_crxcavator", "sfp_customfeed", "sfp_cybercrimetracker", "sfp_debounce", "sfp_dehashed", "sfp_digitaloceanspace", "sfp_dns_for_family", "sfp_dnsbrute", "sfp_dnscommonsrv", "sfp_dnsdb", "sfp_dnsdumpster", "sfp_dnsgrep", "sfp_dnsneighbor", "sfp_dnsraw", "sfp_dnsresolve", "sfp_dnszonexfer", "sfp_dronebl", "sfp_duckduckgo", "sfp_email", "sfp_emailcrawlr", "sfp_emailformat", "sfp_emailrep", "sfp_emergingthreats", "sfp_errors", "sfp_ethereum", "sfp_etherscan", "sfp_filemeta", "sfp_flickr", "sfp_focsec", "sfp_fortinet", "sfp_fraudguard", "sfp_fsecure_riddler", "sfp_fullcontact", "sfp_fullhunt", "sfp_github", "sfp_gleif", "sfp_google_tag_manager", "sfp_googlemaps", "sfp_googleobjectstorage", "sfp_googlesafebrowsing", "sfp_googlesearch", "sfp_gravatar", "sfp_grayhatwarfare", "sfp_greensnow", "sfp_grep_app", "sfp_greynoise", "sfp_greynoise_community", "sfp_h1nobbdde", "sfp_hackertarget", "sfp_hashes", "sfp_haveibeenpwned", "sfp_honeypot", "sfp_hosting", "sfp_hostio", "sfp_hunter", "sfp_hybrid_analysis", "sfp_iban", "sfp_iknowwhatyoudownload", "sfp_intelx", "sfp_intfiles", "sfp_ipapico", "sfp_ipapicom", "sfp_ipinfo", "sfp_ipqualityscore", "sfp_ipregistry", "sfp_ipstack", "sfp_isc", "sfp_jsonwhoiscom", "sfp_junkfiles", "sfp_keybase", "sfp_koodous", "sfp_leakix", "sfp_maltiverse", "sfp_malwarepatrol", "sfp_metadefender", "sfp_mnemonic", "sfp_multiproxy", "sfp_myspace", "sfp_nameapi", "sfp_names", "sfp_networksdb", "sfp_neutrinoapi", "sfp_numverify", "sfp_onioncity", "sfp_onionsearchengine", "sfp_onyphe", "sfp_openbugbounty", "sfp_opencorporates", "sfp_opendns", "sfp_opennic", "sfp_openphish", "sfp_openstreetmap", "sfp_pageinfo", "sfp_pastebin", "sfp_pgp", "sfp_phishstats", "sfp_phishtank", "sfp_phone", "sfp_portscan_tcp", "sfp_projectdiscovery", "sfp_psbdmp", "sfp_pulsedive", "sfp_punkspider", "sfp_quad9", "sfp_reversewhois", "sfp_ripe", "sfp_riskiq", "sfp_robtex", "sfp_s3bucket", "sfp_searchcode", "sfp_securitytrails", "sfp_seon", "sfp_shodan", "sfp_similar", "sfp_skymem", "sfp_slideshare", "sfp_snov", "sfp_social", "sfp_sociallinks", "sfp_socialprofiles", "sfp_sorbs", "sfp_spamcop", "sfp_spamhaus", "sfp_spider", "sfp_spur", "sfp_spyonweb", "sfp_sslcert", "sfp_stackoverflow", "sfp_stevenblack_hosts", "sfp_strangeheaders", "sfp_subdomain_takeover", "sfp_sublist3r", "sfp_surbl", "sfp_talosintel", "sfp_template", "sfp_textmagic", "sfp_threatcrowd", "sfp_threatfox", "sfp_threatjammer", "sfp_threatminer", "sfp_tldsearch", "sfp_tool_cmseek", "sfp_tool_dnstwist", "sfp_tool_nbtscan", "sfp_tool_nmap", "sfp_tool_nuclei", "sfp_tool_onesixtyone", "sfp_tool_retirejs", "sfp_tool_snallygaster", "sfp_tool_testsslsh", "sfp_tool_trufflehog", "sfp_tool_wafw00f", "sfp_tool_wappalyzer", "sfp_tool_whatweb", "sfp_torch", "sfp_torexits", "sfp_trashpanda", "sfp_trumail", "sfp_twilio", "sfp_twitter", "sfp_uceprotect", "sfp_urlscan", "sfp_venmo", "sfp_viewdns", "sfp_virustotal", "sfp_voipbl", "sfp_vxvault", "sfp_webanalytics", "sfp_webframework", "sfp_webserver", "sfp_whatcms", "sfp_whois", "sfp_whoisology", "sfp_whoxy", "sfp_wigle", "sfp_wikileaks", "sfp_wikipediaedits", "sfp_xforce", "sfp_yandexdns", "sfp_zetalytics", "sfp_zonefiles", "sfp_zoneh"]
+all_all_modules = "sfp_abstractapi,sfp_abusech,sfp_abuseipdb,sfp_abusix,sfp_accounts,sfp_adblock,sfp_adguard_dns,sfp_ahmia,sfp_alienvault,sfp_alienvaultiprep,sfp_apple_itunes,sfp_archiveorg,sfp_arin,sfp_azureblobstorage,sfp_base64,sfp_bgpview,sfp_binaryedge,sfp_bingsearch,sfp_bingsharedip,sfp_binstring,sfp_bitcoin,sfp_bitcoinabuse,sfp_bitcoinwhoswho,sfp_blockchain,sfp_blocklistde,sfp_botscout,sfp_botvrij,sfp_builtwith,sfp_c99,sfp_callername,sfp_censys,sfp_certspotter,sfp_cinsscore,sfp_circllu,sfp_citadel,sfp_cleanbrowsing,sfp_cleantalk,sfp_clearbit,sfp_cloudflaredns,sfp_coinblocker,sfp_commoncrawl,sfp_comodo,sfp_company,sfp_cookie,sfp_countryname,sfp_creditcard,sfp_crobat_api,sfp_crossref,sfp_crt,sfp_crxcavator,sfp_customfeed,sfp_cybercrimetracker,sfp_debounce,sfp_dehashed,sfp_digitaloceanspace,sfp_dns_for_family,sfp_dnsbrute,sfp_dnscommonsrv,sfp_dnsdb,sfp_dnsdumpster,sfp_dnsgrep,sfp_dnsneighbor,sfp_dnsraw,sfp_dnsresolve,sfp_dnszonexfer,sfp_dronebl,sfp_duckduckgo,sfp_email,sfp_emailcrawlr,sfp_emailformat,sfp_emailrep,sfp_emergingthreats,sfp_errors,sfp_ethereum,sfp_etherscan,sfp_filemeta,sfp_flickr,sfp_focsec,sfp_fortinet,sfp_fraudguard,sfp_fsecure_riddler,sfp_fullcontact,sfp_fullhunt,sfp_github,sfp_gleif,sfp_google_tag_manager,sfp_googlemaps,sfp_googleobjectstorage,sfp_googlesafebrowsing,sfp_googlesearch,sfp_gravatar,sfp_grayhatwarfare,sfp_greensnow,sfp_grep_app,sfp_greynoise,sfp_greynoise_community,sfp_h1nobbdde,sfp_hackertarget,sfp_hashes,sfp_haveibeenpwned,sfp_honeypot,sfp_hosting,sfp_hostio,sfp_hunter,sfp_hybrid_analysis,sfp_iban,sfp_iknowwhatyoudownload,sfp_intelx,sfp_intfiles,sfp_ipapico,sfp_ipapicom,sfp_ipinfo,sfp_ipqualityscore,sfp_ipregistry,sfp_ipstack,sfp_isc,sfp_jsonwhoiscom,sfp_junkfiles,sfp_keybase,sfp_koodous,sfp_leakix,sfp_maltiverse,sfp_malwarepatrol,sfp_metadefender,sfp_mnemonic,sfp_multiproxy,sfp_myspace,sfp_nameapi,sfp_names,sfp_networksdb,sfp_neutrinoapi,sfp_numverify,sfp_onioncity,sfp_onionsearchengine,sfp_onyphe,sfp_openbugbounty,sfp_opencorporates,sfp_opendns,sfp_opennic,sfp_openphish,sfp_openstreetmap,sfp_pageinfo,sfp_pastebin,sfp_pgp,sfp_phishstats,sfp_phishtank,sfp_phone,sfp_portscan_tcp,sfp_projectdiscovery,sfp_psbdmp,sfp_pulsedive,sfp_punkspider,sfp_quad9,sfp_reversewhois,sfp_ripe,sfp_riskiq,sfp_robtex,sfp_s3bucket,sfp_searchcode,sfp_securitytrails,sfp_seon,sfp_shodan,sfp_similar,sfp_skymem,sfp_slideshare,sfp_snov,sfp_social,sfp_sociallinks,sfp_socialprofiles,sfp_sorbs,sfp_spamcop,sfp_spamhaus,sfp_spider,sfp_spur,sfp_spyonweb,sfp_sslcert,sfp_stackoverflow,sfp_stevenblack_hosts,sfp_strangeheaders,sfp_subdomain_takeover,sfp_sublist3r,sfp_surbl,sfp_talosintel,sfp_template,sfp_textmagic,sfp_threatcrowd,sfp_threatfox,sfp_threatjammer,sfp_threatminer,sfp_tldsearch,sfp_tool_cmseek,sfp_tool_dnstwist,sfp_tool_nbtscan,sfp_tool_nmap,sfp_tool_nuclei,sfp_tool_onesixtyone,sfp_tool_retirejs,sfp_tool_snallygaster,sfp_tool_testsslsh,sfp_tool_trufflehog,sfp_tool_wafw00f,sfp_tool_wappalyzer,sfp_tool_whatweb,sfp_torch,sfp_torexits,sfp_trashpanda,sfp_trumail,sfp_twilio,sfp_twitter,sfp_uceprotect,sfp_urlscan,sfp_venmo,sfp_viewdns,sfp_virustotal,sfp_voipbl,sfp_vxvault,sfp_webanalytics,sfp_webframework,sfp_webserver,sfp_whatcms,sfp_whois,sfp_whoisology,sfp_whoxy,sfp_wigle,sfp_wikileaks,sfp_wikipediaedits,sfp_xforce,sfp_yandexdns,sfp_zetalytics,sfp_zonefiles,sfp_zoneh"
 
 # Variables & Defaults
 default_module = "sfp_accounts"
@@ -55,19 +55,17 @@ HAVOC_INFO = "#8be9fd"  # Cyan
 HAVOC_WARNING = "#ffb86c"  # Orange
 
 # Creates logs
-Create dialog and log widget
+# Create dialog and log widget
 dialog = havocui.Dialog("The Spider of 12th legs", True, 670, 400)
-log = havocui.Logger("The Spiderfoot Module")
+log = havocui.Logger("The Spider of 12th legs")
 
 
 ####################################################################################################################################################################
 
 
 def installation():
-    os.system("wget https://github.com/smicallef/spiderfoot/archive/v4.0.tar.gz")
-    os.system("tar zxvf v4.0.tar.gz")
-    os.system("cd spiderfoot-4.0")
-    os.system("pip3 install -r requirements.txt")
+    os.system("cd /opt/Havoc/data/extensions/ && mkdir The_Spider && cd The_Spider/ && git clone https://github.com/smicallef/spiderfoot.git")
+    os.system("cd /opt/Havoc/data/extensions/The_Spider/spiderfoot && pip3 install -r requirements.txt")
 
 def change_default_target(T):
     global target
@@ -93,6 +91,7 @@ def change_default_all_modules(M):
 def Link_Start():
     def get_build_command() -> str:
         global target
+        global all_modules
         if all_modules == "":
             global default_module
             base_cmd = "python3 " + spiderfoot_path + " -m " + default_module + " -s " + target + " -q"
@@ -100,7 +99,6 @@ def Link_Start():
             global all_all_modules
             base_cmd = "python3 " + spiderfoot_path + " -m " + all_all_modules + " -s " + target + " -q"
         else:
-            global all_modules
             base_cmd = "python3 " + spiderfoot_path + " -m " + all_modules + " -s " + target + " -q"
 
         print(f"[+] Command to be run: {base_cmd}")
@@ -111,6 +109,7 @@ def Link_Start():
         cmd = get_build_command()
 
         os.system(cmd)
+        os.system("echo Scan Completly, all hostile targets finded!!!")
 
         # Create Log
         log.addText(f"Command has been be executed")
@@ -157,8 +156,8 @@ def SpiderFootConfiguration():
 
 
 if not os.path.exists(spiderfoot_path):
-    install()
+    installation()
 
 
 # Create Tab
-havocui.createtab("The Spider", "Spider", SpiderFootConfiguration)
+havocui.createtab("The Spider", "The Spiderfoot Module", SpiderFootConfiguration)
